@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rifathasan/static/css/main.dc1cac8d.css",
+    "main.js": "/rifathasan/static/js/main.6d995d95.js",
+    "static/js/453.c0b2a00a.chunk.js": "/rifathasan/static/js/453.c0b2a00a.chunk.js",
+    "static/media/logo.svg": "/rifathasan/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/rifathasan/index.html",
+    "main.dc1cac8d.css.map": "/rifathasan/static/css/main.dc1cac8d.css.map",
+    "main.6d995d95.js.map": "/rifathasan/static/js/main.6d995d95.js.map",
+    "453.c0b2a00a.chunk.js.map": "/rifathasan/static/js/453.c0b2a00a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc1cac8d.css",
+    "static/js/main.6d995d95.js"
+  ]
+}
