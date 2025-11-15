@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import { personalInfo, socialLinks } from '../../data/portfolio';
+import profileImage from '../../assets/my-picture.jpg';
 
 const About: React.FC = () => {
   const renderBioWithHighlights = (text: string) => {
@@ -77,7 +78,7 @@ const About: React.FC = () => {
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
               />
               <motion.img
-                src={personalInfo.avatar}
+                src={profileImage}
                 alt={personalInfo.name}
                 className="relative w-64 h-64 rounded-full object-cover border-4 border-cyan-400/30 shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: 5 }}
