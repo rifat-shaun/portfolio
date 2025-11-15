@@ -1,4 +1,4 @@
-import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo } from '../types';
+import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Experience } from '../types';
 
 export const personalInfo: PersonalInfo = {
   name: 'Iaan Mesquita',
@@ -12,6 +12,7 @@ export const personalInfo: PersonalInfo = {
 
 export const navItems: NavItem[] = [
   { label: 'Sobre', href: '#sobre' },
+  { label: 'Experiência', href: '#experiencia' },
   { label: 'Skills', href: '#skills' },
   { label: 'Laboratório', href: '#laboratorio' },
   { label: 'Contato', href: '#contato' },
@@ -104,6 +105,66 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'MDX', 'Tailwind', 'Vercel'],
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com/iaanmesquita/blog',
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    id: '1',
+    company: 'Tech Innovators Inc.',
+    position: 'Senior Full-Stack Developer',
+    location: 'São Paulo, Brasil',
+    startDate: '2022-01',
+    endDate: '',
+    current: true,
+    description: 'Leading development of enterprise-level web applications and mentoring junior developers.',
+    responsibilities: [
+      'Architected and developed scalable microservices using Node.js and React',
+      'Led a team of 5 developers in agile environment',
+      'Reduced application load time by 60% through optimization',
+      'Implemented CI/CD pipelines reducing deployment time by 80%',
+    ],
+    technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'Docker', 'PostgreSQL'],
+    logo: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=200&h=200&fit=crop',
+    companyUrl: 'https://example.com',
+  },
+  {
+    id: '2',
+    company: 'Digital Solutions Co.',
+    position: 'Full-Stack Developer',
+    location: 'Remote',
+    startDate: '2020-03',
+    endDate: '2021-12',
+    current: false,
+    description: 'Developed and maintained multiple client-facing web applications.',
+    responsibilities: [
+      'Built responsive web applications using React and Vue.js',
+      'Developed RESTful APIs with Node.js and Express',
+      'Collaborated with designers to implement pixel-perfect UIs',
+      'Integrated third-party services and payment gateways',
+    ],
+    technologies: ['React', 'Vue.js', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
+    logo: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=200&h=200&fit=crop',
+    companyUrl: 'https://example.com',
+  },
+  {
+    id: '3',
+    company: 'StartUp Ventures',
+    position: 'Frontend Developer',
+    location: 'São Paulo, Brasil',
+    startDate: '2018-06',
+    endDate: '2020-02',
+    current: false,
+    description: 'Focused on creating modern and responsive user interfaces for startup products.',
+    responsibilities: [
+      'Developed single-page applications using React',
+      'Implemented responsive designs with CSS3 and Sass',
+      'Optimized web applications for maximum speed and scalability',
+      'Worked closely with UX designers to implement user-friendly interfaces',
+    ],
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Sass', 'Redux'],
+    logo: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=200&fit=crop',
+    companyUrl: 'https://example.com',
   },
 ];
 
