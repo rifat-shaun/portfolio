@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
         <SectionTitle
           icon="🚀"
           title="Skills"
-          subtitle="Tecnologias e ferramentas que domino"
+          subtitle="Technologies and tools I work with"
         />
 
         <div className="space-y-12">

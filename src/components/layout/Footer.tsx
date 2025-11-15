@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               <span className="text-cyan-400">✓</span> Iaan Mesquita
             </h3>
             <p className="text-gray-400 text-sm">
-              Desenvolvedor Full-Stack
+              Full-Stack Developer
             </p>
           </div>
 
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} Iaan Mesquita. Todos os direitos reservados.
+            © {currentYear} Iaan Mesquita. All rights reserved.
           </p>
         </div>
       </div>

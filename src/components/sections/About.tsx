@@ -52,9 +52,9 @@ const About: React.FC = () => {
   };
 
   return (
-    <section id="sobre" className="py-20 px-6 bg-gray-900/50">
+    <section id="about" className="py-20 px-6 bg-gray-900/50">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle icon="💼" title="Sobre" />
+        <SectionTitle icon="💼" title="About" />
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left - Profile */}
@@ -139,7 +139,7 @@ const About: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Conheça um pouco sobre mim
+              Get to know me
             </motion.h4>
             
             <motion.div
@@ -160,10 +160,10 @@ const About: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               {[
-                { value: '5+', label: 'Anos de Experiência' },
-                { value: '50+', label: 'Projetos Completos' },
-                { value: '30+', label: 'Clientes Felizes' },
-                { value: '15+', label: 'Prêmios' },
+                { value: '5+', label: 'Years Experience' },
+                { value: '50+', label: 'Projects Completed' },
+                { value: '30+', label: 'Happy Clients' },
+                { value: '15+', label: 'Awards' },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

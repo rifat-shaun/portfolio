@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
                 size="lg"
                 onClick={() => window.open(personalInfo.resumeUrl, '_blank')}
               >
-                Baixar Currículo
+                Download Resume
               </Button>
             </motion.div>
           </motion.div>

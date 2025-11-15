@@ -3,19 +3,19 @@ import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Ex
 export const personalInfo: PersonalInfo = {
   name: 'Iaan Mesquita',
   title: 'Full-Stack Developer',
-  tagline: 'DESENVOLVEDOR FULL-STACK',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a elit a mi sollicitudin efficitur vel eget metus.',
+  tagline: 'FULL-STACK DEVELOPER',
+  description: 'Passionate full-stack developer specializing in building exceptional digital experiences. I create responsive web applications with clean code and modern technologies.',
   avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-  bio: 'Lorem ipsum nibh gravida praesent posuere sodales mi, donec platea elementum proin integer donec primis quam, sed mattis aptent suspendisse nostra curae. Bibendum semper arcu suscipit temp attis aptent suspendisse nostra curae. bibendum semper arcu suscipit temp',
+  bio: 'With over 5 years of experience in web development, I specialize in creating scalable and performant applications. My expertise spans across frontend frameworks like React and Vue.js, backend technologies including Node.js and Express, and cloud platforms such as AWS. I am passionate about writing clean, maintainable code and staying up-to-date with the latest industry trends.',
   resumeUrl: '/resume.pdf',
 };
 
 export const navItems: NavItem[] = [
-  { label: 'Sobre', href: '#sobre' },
-  { label: 'Experiência', href: '#experiencia' },
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Laboratório', href: '#laboratorio' },
-  { label: 'Contato', href: '#contato' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -113,7 +113,7 @@ export const experiences: Experience[] = [
     id: '1',
     company: 'Tech Innovators Inc.',
     position: 'Senior Full-Stack Developer',
-    location: 'São Paulo, Brasil',
+    location: 'São Paulo, Brazil',
     startDate: '2022-01',
     endDate: '',
     current: true,
@@ -151,7 +151,7 @@ export const experiences: Experience[] = [
     id: '3',
     company: 'StartUp Ventures',
     position: 'Frontend Developer',
-    location: 'São Paulo, Brasil',
+    location: 'São Paulo, Brazil',
     startDate: '2018-06',
     endDate: '2020-02',
     current: false,
@@ -171,6 +171,6 @@ export const experiences: Experience[] = [
 export const contactInfo: ContactInfo = {
   email: 'iaan@example.com',
   phone: '+55 11 98765-4321',
-  location: 'São Paulo, Brasil',
+  location: 'São Paulo, Brazil',
 };
 

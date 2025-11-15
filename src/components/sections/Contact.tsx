@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // Handle form submission
     console.log('Form submitted:', formData);
-    alert('Mensagem enviada com sucesso! (Demo)');
+    alert('Message sent successfully! (Demo)');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,12 +27,12 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contato" className="py-20 px-6">
+    <section id="contact" className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <SectionTitle 
           icon="📬" 
-          title="Contato" 
-          subtitle="Entre em contato comigo"
+          title="Contact" 
+          subtitle="Get in touch with me"
         />
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -51,11 +51,11 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h3 className="text-2xl font-bold text-white mb-6">
-                Vamos trabalhar juntos!
+                Let's work together!
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Estou sempre aberto a novas oportunidades e projetos interessantes. 
-                Se você tem uma ideia ou precisa de ajuda com seu projeto, não hesite em entrar em contato.
+                I'm always open to new opportunities and interesting projects. 
+                If you have an idea or need help with your project, don't hesitate to get in touch.
               </p>
             </motion.div>
 
@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-white font-medium mb-1">Localização</h4>
+                  <h4 className="text-white font-medium mb-1">Location</h4>
                   <p className="text-gray-400">{contactInfo.location}</p>
                 </div>
               </motion.div>
@@ -140,7 +140,7 @@ const Contact: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                  Nome
+                  Name
                 </label>
                 <input
                   type="text"
@@ -150,7 +150,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan-400 transition-colors"
-                  placeholder="Seu nome"
+                  placeholder="Your name"
                 />
               </motion.div>
 
@@ -171,7 +171,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan-400 transition-colors"
-                  placeholder="seu@email.com"
+                  placeholder="your@email.com"
                 />
               </motion.div>
 
@@ -182,7 +182,7 @@ const Contact: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                  Assunto
+                  Subject
                 </label>
                 <input
                   type="text"
@@ -192,7 +192,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan-400 transition-colors"
-                  placeholder="Assunto da mensagem"
+                  placeholder="Message subject"
                 />
               </motion.div>
 
@@ -203,7 +203,7 @@ const Contact: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Mensagem
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -213,7 +213,7 @@ const Contact: React.FC = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan-400 transition-colors resize-none"
-                  placeholder="Sua mensagem..."
+                  placeholder="Your message..."
                 />
               </motion.div>
 
@@ -224,7 +224,7 @@ const Contact: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
                 <Button type="submit" variant="primary" size="lg" className="w-full">
-                  Enviar Mensagem
+                  Send Message
                 </Button>
               </motion.div>
             </form>

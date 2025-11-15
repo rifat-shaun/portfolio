@@ -22,21 +22,21 @@ const Experience: React.FC = () => {
     const remainingMonths = months % 12;
     
     if (years === 0) {
-      return `${remainingMonths} ${remainingMonths === 1 ? 'mês' : 'meses'}`;
+      return `${remainingMonths} ${remainingMonths === 1 ? 'month' : 'months'}`;
     } else if (remainingMonths === 0) {
-      return `${years} ${years === 1 ? 'ano' : 'anos'}`;
+      return `${years} ${years === 1 ? 'year' : 'years'}`;
     } else {
-      return `${years} ${years === 1 ? 'ano' : 'anos'} e ${remainingMonths} ${remainingMonths === 1 ? 'mês' : 'meses'}`;
+      return `${years} ${years === 1 ? 'year' : 'years'} and ${remainingMonths} ${remainingMonths === 1 ? 'month' : 'months'}`;
     }
   };
 
   return (
-    <section id="experiencia" className="py-20 px-6">
+    <section id="experience" className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <SectionTitle 
           icon="💼" 
-          title="Experiência" 
-          subtitle="Minha jornada profissional"
+          title="Experience" 
+          subtitle="My professional journey"
         />
 
         <div className="relative">
@@ -149,7 +149,7 @@ const Experience: React.FC = () => {
                       {/* Technologies */}
                       <div>
                         <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2 uppercase tracking-wide">
-                          Tecnologias:
+                          Technologies:
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech, idx) => (

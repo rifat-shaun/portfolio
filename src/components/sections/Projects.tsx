@@ -23,12 +23,12 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section id="laboratorio" className="py-20 px-6 bg-gray-900/50">
+    <section id="projects" className="py-20 px-6 bg-gray-900/50">
       <div className="max-w-7xl mx-auto">
         <SectionTitle 
           icon="🔬" 
-          title="Laboratório" 
-          subtitle="Projetos que desenvolvi com paixão"
+          title="Projects" 
+          subtitle="Projects I've built with passion"
         />
 
         <motion.div
