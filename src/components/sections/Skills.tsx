@@ -6,19 +6,38 @@ import { skills } from '../../data/portfolio';
 const Skills: React.FC = () => {
   const categories = Array.from(new Set(skills.map(skill => skill.category)));
 
+  // Tech stack for the scrolling marquee
+  const techStack = [
+    { name: 'React', icon: '⚛️', color: 'cyan' },
+    { name: 'Node.js', icon: '💚', color: 'green' },
+    { name: 'TypeScript', icon: '📘', color: 'blue' },
+    { name: 'Next.js', icon: '▲', color: 'purple' },
+    { name: 'Vue.js', icon: '💚', color: 'green' },
+    { name: 'Angular', icon: '🅰️', color: 'red' },
+    { name: 'Express.js', icon: '🚂', color: 'cyan' },
+    { name: 'MongoDB', icon: '🍃', color: 'green' },
+    { name: 'PostgreSQL', icon: '🐘', color: 'blue' },
+    { name: 'Docker', icon: '🐳', color: 'cyan' },
+    { name: 'AWS', icon: '☁️', color: 'purple' },
+    { name: 'Git', icon: '📦', color: 'orange' },
+  ];
+
+  // Duplicate the array for seamless infinite scroll
+  const duplicatedTechStack = [...techStack, ...techStack];
+
   return (
     <section id="skills" className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle 
-          icon="🚀" 
-          title="Skills" 
+        <SectionTitle
+          icon="🚀"
+          title="Skills"
           subtitle="Tecnologias e ferramentas que domino"
         />
 
         <div className="space-y-12">
           {categories.map((category, categoryIndex) => {
             const categorySkills = skills.filter(skill => skill.category === category);
-            
+
             return (
               <motion.div
                 key={category}
@@ -37,7 +56,7 @@ const Skills: React.FC = () => {
                 >
                   {category}
                 </motion.h3>
-                
+
                 <div className="grid md:grid-cols-2 gap-6">
                   {categorySkills.map((skill, skillIndex) => (
                     <motion.div
@@ -60,7 +79,7 @@ const Skills: React.FC = () => {
                           {skill.level}%
                         </motion.span>
                       </div>
-                      
+
                       <div className="relative h-2 bg-gray-800 rounded-full overflow-hidden">
                         <motion.div
                           className="absolute top-0 left-0 h-full bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"
@@ -85,38 +104,37 @@ const Skills: React.FC = () => {
         </div>
 
         {/* Additional Skills Tags */}
-        <motion.div
-          className="mt-16 pt-12 border-t border-gray-800"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <motion.h3
-            className="text-2xl font-bold text-white mb-6 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Outras Tecnologias
-          </motion.h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['REST API', 'GraphQL', 'Redux', 'Jest', 'Cypress', 'Webpack', 'Vite', 'CI/CD', 'Scrum', 'Git Flow'].map((tech, index) => (
-              <motion.span
-                key={tech}
-                className="px-4 py-2 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-700 hover:border-cyan-400 hover:text-cyan-400 transition-all cursor-default"
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                whileHover={{ scale: 1.1, y: -5 }}
-              >
-                {tech}
-              </motion.span>
-            ))}
+        {/* Horizontal Scrolling Tech Cards */}
+        <div className="mt-16 overflow-hidden">
+          <div className='bg-cyan-400/5 p-4 rounded-lg border border-cyan-400/10'>
+            <motion.div
+              className="flex gap-6"
+              animate={{
+                x: [0, -1920],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 30,
+                  ease: "linear",
+                },
+              }}
+            >
+              {duplicatedTechStack.map((tech, index) => (
+                <motion.div
+                  key={`${tech.name}-${index}`}
+                  className="flex-shrink-0 w-40 h-40 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 hover:border-cyan-400/50 transition-all duration-300 flex flex-col items-center justify-center gap-4 shadow-lg hover:shadow-cyan-400/20"
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <div className="text-5xl">{tech.icon}</div>
+                  <span className="text-sm font-semibold text-gray-300">{tech.name}</span>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
