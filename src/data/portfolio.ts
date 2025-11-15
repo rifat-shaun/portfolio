@@ -1,4 +1,4 @@
-import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Experience, Achievement } from '../types';
+import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Experience, Achievement, Hobby } from '../types';
 
 import cognitusLogo from '../assets/cognitus.png';
 import rightcodesLogo from '../assets/rightcodes.png';
@@ -21,6 +21,7 @@ export const navItems: NavItem[] = [
   { label: 'Skills', href: '#skills' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Hobbies', href: '#hobbies' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -253,6 +254,27 @@ export const achievements: Achievement[] = [
     category: 'Speaking',
     icon: '🎤',
     image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=400&fit=crop',
+  },
+];
+
+export const hobbies: Hobby[] = [
+  {
+    id: '1',
+    name: 'Learning Modern Technology',
+    description: 'Passionate about exploring and mastering cutting-edge technologies, frameworks, and development tools to stay ahead in the ever-evolving tech landscape.',
+    icon: '💻',
+  },
+  {
+    id: '2',
+    name: 'Playing Chess',
+    description: 'Strategic thinking and problem-solving through chess, applying logical reasoning and planning skills that complement my approach to software development.',
+    icon: '♟️',
+  },
+  {
+    id: '3',
+    name: 'Travelling',
+    description: 'Exploring new places and cultures, gaining diverse perspectives and experiences that enrich both personal growth and professional creativity.',
+    icon: '✈️',
   },
 ];
 

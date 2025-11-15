@@ -67,3 +67,10 @@ export interface Achievement {
   image?: string;
   link?: string;
 }
+
+export interface Hobby {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+}

@@ -6,6 +6,7 @@ import Experience from './components/sections/Experience';
 import Skills from './components/sections/Skills';
 import Achievements from './components/sections/Achievements';
 import Projects from './components/sections/Projects';
+import Hobbies from './components/sections/Hobbies';
 import Contact from './components/sections/Contact';
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
         <Skills />
         <Achievements />
         <Projects />
+        <Hobbies />
         <Contact />
       </main>
       <Footer />
