@@ -1,12 +1,12 @@
 import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Experience, Achievement } from '../types';
 
 export const personalInfo: PersonalInfo = {
-  name: 'Iaan Mesquita',
-  title: 'Full-Stack Developer',
-  tagline: 'FULL-STACK DEVELOPER',
-  description: 'Passionate full-stack developer specializing in building exceptional digital experiences. I create responsive web applications with clean code and modern technologies.',
+  name: 'Rifat Hasan Shaun',
+  title: 'Senior Software Engineer',
+  tagline: 'SENIOR SOFTWARE ENGINEER',
+  description: 'Building reliable, scalable applications with modern technologies. Specializing in full-stack development with a focus on clean architecture and performance optimization.',
   avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-  bio: 'With over 5 years of experience in web development, I specialize in creating scalable and performant applications. My expertise spans across frontend frameworks like React and Vue.js, backend technologies including Node.js and Express, and cloud platforms such as AWS. I am passionate about writing clean, maintainable code and staying up-to-date with the latest industry trends.',
+  bio: 'Senior Software Engineer with nearly **five years of experience** delivering reliable, scalable applications across the full stack. I specialize in building **microservice-based systems** using **React**, **Express**, **Node.js**, **NestJS**, **JavaScript**, and **TypeScript**, with a strong emphasis on **performance optimization** and maintainable architecture.\n\nMy background includes **competitive programming** through National Collegiate Programming Contests, which has shaped my **analytical approach** to solving complex technical challenges. I am committed to writing **clean, readable code** and following modern development practices.\n\nWith extensive experience working in **remote and cross-functional teams**, I bring strong **communication skills**, **accountability**, and a solution-oriented mindset. I approach every challenge with curiosity and focus on delivering **quality results** that balance technical excellence with practical business needs.',
   resumeUrl: '/resume.pdf',
 };
 
@@ -22,17 +22,17 @@ export const navItems: NavItem[] = [
 export const socialLinks: SocialLink[] = [
   {
     name: 'Email',
-    url: 'mailto:iaan@example.com',
+    url: 'mailto:rifat@example.com',
     icon: 'mail',
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/iaanmesquita',
+    url: 'https://github.com/rifathasan',
     icon: 'github',
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/iaanmesquita',
+    url: 'https://linkedin.com/in/rifathasan',
     icon: 'linkedin',
   },
 ];
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop',
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/iaanmesquita/ecommerce',
+    githubUrl: 'https://github.com/rifathasan/ecommerce',
   },
   {
     id: '2',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
     technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/iaanmesquita/taskmanager',
+    githubUrl: 'https://github.com/rifathasan/taskmanager',
   },
   {
     id: '3',
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop',
     technologies: ['React', 'TypeScript', 'Weather API', 'Charts.js'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/iaanmesquita/weather',
+    githubUrl: 'https://github.com/rifathasan/weather',
   },
   {
     id: '4',
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
     technologies: ['Vue.js', 'D3.js', 'Express', 'MySQL'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/iaanmesquita/socialdash',
+    githubUrl: 'https://github.com/rifathasan/socialdash',
   },
   {
     id: '5',
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop',
     technologies: ['React Native', 'Firebase', 'Redux', 'Chart.js'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/iaanmesquita/fitness',
+    githubUrl: 'https://github.com/rifathasan/fitness',
   },
   {
     id: '6',
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop',
     technologies: ['Next.js', 'MDX', 'Tailwind', 'Vercel'],
     liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/iaanmesquita/blog',
+    githubUrl: 'https://github.com/rifathasan/blog',
   },
 ];
 
@@ -220,7 +220,7 @@ export const achievements: Achievement[] = [
     category: 'Open Source',
     icon: '💻',
     image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=600&h=400&fit=crop',
-    link: 'https://github.com/iaanmesquita',
+    link: 'https://github.com/rifathasan',
   },
   {
     id: '4',
@@ -252,7 +252,7 @@ export const achievements: Achievement[] = [
 ];
 
 export const contactInfo: ContactInfo = {
-  email: 'iaan@example.com',
+  email: 'rifat@example.com',
   phone: '+55 11 98765-4321',
   location: 'São Paulo, Brazil',
 };

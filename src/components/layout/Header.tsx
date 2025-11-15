@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             }}
           >
             <span className="text-cyan-400">✓</span>
-            <span className="group-hover:text-cyan-400 transition-colors">Iaan Mesquita</span>
+            <span className="group-hover:text-cyan-400 transition-colors">Rifat Hasan Shaun</span>
             <span className="text-cyan-400">›</span>
           </a>
 

@@ -6,22 +6,28 @@ import profileImage from '../../assets/my-picture.jpg';
 
 const About: React.FC = () => {
   const renderBioWithHighlights = (text: string) => {
-    const words = text.split(' ');
-    const highlights = ['donec', 'suspendisse', 'attis'];
+    // Split by double newlines to create paragraphs
+    const paragraphs = text.split('\n\n');
     
-    return words.map((word, index) => {
-      const cleanWord = word.toLowerCase().replace(/[.,]/g, '');
-      const isHighlighted = highlights.includes(cleanWord);
+    return paragraphs.map((paragraph, pIndex) => {
+      // Split by ** to find bold text
+      const parts = paragraph.split(/(\*\*.*?\*\*)/g);
       
       return (
-        <span key={index}>
-          {isHighlighted ? (
-            <span className="font-bold text-white">{word}</span>
-          ) : (
-            word
-          )}
-          {index < words.length - 1 ? ' ' : ''}
-        </span>
+        <p key={pIndex} className="mb-4 last:mb-0">
+          {parts.map((part, index) => {
+            // If the part is wrapped in **, make it bold
+            if (part.startsWith('**') && part.endsWith('**')) {
+              const boldText = part.slice(2, -2);
+              return (
+                <span key={index} className="font-bold text-cyan-400">
+                  {boldText}
+                </span>
+              );
+            }
+            return <span key={index}>{part}</span>;
+          })}
+        </p>
       );
     });
   };
@@ -143,13 +149,13 @@ const About: React.FC = () => {
             </motion.h4>
             
             <motion.div
-              className="text-gray-400 text-lg leading-relaxed space-y-4"
+              className="text-gray-400 text-lg leading-relaxed"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <p>{renderBioWithHighlights(personalInfo.bio)}</p>
+              {renderBioWithHighlights(personalInfo.bio)}
             </motion.div>
 
             <motion.div
@@ -161,9 +167,9 @@ const About: React.FC = () => {
             >
               {[
                 { value: '5+', label: 'Years Experience' },
-                { value: '50+', label: 'Projects Completed' },
-                { value: '30+', label: 'Happy Clients' },
-                { value: '15+', label: 'Awards' },
+                { value: '4', label: 'Companies' },
+                { value: '10+', label: 'Technologies' },
+                { value: '100+', label: 'Commits' },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

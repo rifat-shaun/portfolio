@@ -5,9 +5,9 @@ import { experiences } from '../../data/portfolio';
 
 const Experience: React.FC = () => {
   const formatDate = (dateStr: string) => {
-    if (!dateStr) return 'Presente';
+    if (!dateStr) return 'Present';
     const [year, month] = dateStr.split('-');
-    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     return `${months[parseInt(month) - 1]} ${year}`;
   };
 
@@ -79,7 +79,7 @@ const Experience: React.FC = () => {
                             viewport={{ once: true }}
                             transition={{ delay: 0.5 + index * 0.2, type: 'spring' }}
                           >
-                            Atual
+                            Current
                           </motion.div>
                         )}
                       </div>
@@ -127,7 +127,7 @@ const Experience: React.FC = () => {
                       {/* Responsibilities */}
                       <div className="mb-4">
                         <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2 uppercase tracking-wide">
-                          Responsabilidades:
+                          Responsibilities:
                         </h4>
                         <ul className="space-y-2">
                           {exp.responsibilities.map((resp, idx) => (

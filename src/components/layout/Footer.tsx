@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           {/* Logo/Name */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-white mb-2">
-              <span className="text-cyan-400">✓</span> Iaan Mesquita
+              <span className="text-cyan-400">✓</span> Rifat Hasan Shaun
             </h3>
             <p className="text-gray-400 text-sm">
               Full-Stack Developer
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} Iaan Mesquita. All rights reserved.
+            © {currentYear} Rifat Hasan Shaun. All rights reserved.
           </p>
         </div>
       </div>
