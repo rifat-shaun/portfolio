@@ -14,13 +14,13 @@ const Experience: React.FC = () => {
   const calculateDuration = (start: string, end: string) => {
     const startDate = new Date(start);
     const endDate = end ? new Date(end) : new Date();
-    
-    const months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + 
-                   (endDate.getMonth() - startDate.getMonth());
-    
+
+    const months = (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+      (endDate.getMonth() - startDate.getMonth());
+
     const years = Math.floor(months / 12);
     const remainingMonths = months % 12;
-    
+
     if (years === 0) {
       return `${remainingMonths} ${remainingMonths === 1 ? 'month' : 'months'}`;
     } else if (remainingMonths === 0) {
@@ -33,9 +33,9 @@ const Experience: React.FC = () => {
   return (
     <section id="experience" className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle 
-          icon="💼" 
-          title="Experience" 
+        <SectionTitle
+          icon="💼"
+          title="Experience"
           subtitle="My professional journey"
         />
 
@@ -56,32 +56,40 @@ const Experience: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   {/* Left side - Company Logo */}
                   <motion.div
-                    className={`${index % 2 === 0 ? 'md:order-1' : 'md:order-2'} flex justify-center md:justify-${index % 2 === 0 ? 'end' : 'start'}`}
+                    className={`${index % 2 === 0 ? 'md:order-1 md:justify-end' : 'md:order-2 md:justify-start'} flex justify-center`}
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
                     <div className="relative group">
                       {/* Glow effect */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
-                      
-                      {/* Logo container */}
-                      <div className="relative bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl border-2 border-gray-200 dark:border-gray-700 group-hover:border-cyan-400 transition-all duration-300">
-                        <img
-                          src={exp.logo}
-                          alt={exp.company}
-                          className="w-32 h-32 object-cover rounded-xl"
-                        />
-                        {exp.current && (
-                          <motion.div
-                            className="absolute -top-3 -right-3 bg-cyan-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold shadow-lg"
-                            initial={{ scale: 0 }}
-                            whileInView={{ scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.5 + index * 0.2, type: 'spring' }}
-                          >
-                            Current
-                          </motion.div>
-                        )}
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/50 to-purple-500/50 rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
+
+                      <div className='bg-gray-800/50 p-6 rounded-2xl border border-cyan-400/20'>
+                        {/* Logo container */}
+                        <div className="relative bg-white p-6 rounded-2xl shadow-xl border-2 border-gray-300 group-hover:border-cyan-400 transition-all duration-300">
+                          <img
+                            src={exp.logo}
+                            alt={exp.company}
+                            className="w-48 h-48 object-cover rounded-xl"
+                          />
+                          {exp.current && (
+                            <motion.div
+                              className="absolute -top-3 -right-3 bg-cyan-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold shadow-lg"
+                              initial={{ scale: 0 }}
+                              whileInView={{ scale: 1 }}
+                              viewport={{ once: true }}
+                              animate={{
+                                scale: [1, 1.1, 1],
+                              }}
+                              transition={{
+                                scale: { duration: 2, repeat: Infinity, repeatType: "loop", ease: 'easeInOut', delay: 0.5 },
+                                default: { delay: 0.5 + index * 0.2, type: 'spring' }
+                              }}
+                            >
+                              Current
+                            </motion.div>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </motion.div>

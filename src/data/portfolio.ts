@@ -1,12 +1,17 @@
 import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Experience, Achievement } from '../types';
 
+import cognitusLogo from '../assets/cognitus.png';
+import rightcodesLogo from '../assets/rightcodes.png';
+import enosisLogo from '../assets/enosis.png';
+import implevistaLogo from '../assets/implevista.png';
+
 export const personalInfo: PersonalInfo = {
   name: 'Rifat Hasan Shaun',
   title: 'Senior Software Engineer',
   tagline: 'SENIOR SOFTWARE ENGINEER',
   description: 'Building reliable, scalable applications with modern technologies. Specializing in full-stack development with a focus on clean architecture and performance optimization.',
   avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-  bio: 'Senior Software Engineer with nearly **five years of experience** delivering reliable, scalable applications across the full stack. I specialize in building **microservice-based systems** using **React**, **Express**, **Node.js**, **NestJS**, **JavaScript**, and **TypeScript**, with a strong emphasis on **performance optimization** and maintainable architecture.\n\nMy background includes **competitive programming** through National Collegiate Programming Contests, which has shaped my **analytical approach** to solving complex technical challenges. I am committed to writing **clean, readable code** and following modern development practices.\n\nWith extensive experience working in **remote and cross-functional teams**, I bring strong **communication skills**, **accountability**, and a solution-oriented mindset. I approach every challenge with curiosity and focus on delivering **quality results** that balance technical excellence with practical business needs.',
+  bio: 'Senior Software Engineer with more than **five years of experience** delivering reliable, scalable applications across the full stack. I specialize in building **microservice-based systems** using **React**, **Express**, **Node.js**, **NestJS**, **JavaScript**, and **TypeScript**, with a strong emphasis on **performance optimization** and maintainable architecture.\n\nMy background includes **competitive programming** through National Collegiate Programming Contests, which has shaped my **analytical approach** to solving complex technical challenges. I am committed to writing **clean, readable code** and following modern development practices.\n\nWith extensive experience working in **remote and cross-functional teams**, I bring strong **communication skills**, **accountability**, and a solution-oriented mindset. I approach every challenge with curiosity and focus on delivering **quality results** that balance technical excellence with practical business needs.',
   resumeUrl: '/resume.pdf',
 };
 
@@ -126,7 +131,7 @@ export const experiences: Experience[] = [
       'Implementing best practices and modern development methodologies',
     ],
     technologies: ['React.js', 'Express.js', 'JavaScript', 'SAP Integration', 'Node.js'],
-    logo: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop',
+    logo: cognitusLogo,
     companyUrl: 'https://www.cognitusconsulting.com',
   },
   {
@@ -135,7 +140,7 @@ export const experiences: Experience[] = [
     position: 'Software Engineer L2',
     location: 'Gulshan, Dhaka',
     startDate: '2022-08',
-    endDate: '2023-09',
+    endDate: '2023-10',
     current: false,
     description: 'Worked on microservice-based applications using modern technologies and cloud infrastructure.',
     responsibilities: [
@@ -146,7 +151,7 @@ export const experiences: Experience[] = [
       'Created Python scripts for API endpoint testing and automation',
     ],
     technologies: ['React', 'Node.js', 'NestJS', 'PostgreSQL', 'Material UI', 'RabbitMQ', 'Docker', 'Redis', 'Python'],
-    logo: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=200&fit=crop',
+    logo: enosisLogo,
     companyUrl: 'https://www.enosisbd.com',
   },
   {
@@ -166,7 +171,7 @@ export const experiences: Experience[] = [
       'Utilized React Hooks for efficient component management',
     ],
     technologies: ['React', 'Next.js', 'Node.js', 'Express', 'ES6', 'JavaScript', 'HTML', 'CSS', 'MongoDB', 'Redux'],
-    logo: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=200&h=200&fit=crop',
+    logo: implevistaLogo,
     companyUrl: 'https://www.implevista.com',
   },
   {
@@ -174,7 +179,7 @@ export const experiences: Experience[] = [
     company: 'RightCodes Solutions',
     position: 'Jr. Software Engineer',
     location: 'Uttara, Dhaka',
-    startDate: '2020-12',
+    startDate: '2020-10',
     endDate: '2021-11',
     current: false,
     description: 'Started professional journey before graduation, working with Ruby on Rails and modern JavaScript frameworks.',
@@ -186,7 +191,7 @@ export const experiences: Experience[] = [
       'Participated in code reviews and agile development processes',
     ],
     technologies: ['Ruby', 'Ruby on Rails', 'ReactJS', 'Node.js', 'JavaScript'],
-    logo: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=200&h=200&fit=crop',
+    logo: rightcodesLogo,
     companyUrl: 'https://www.rightcodes.com',
   },
 ];
