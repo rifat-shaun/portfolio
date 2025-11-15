@@ -56,3 +56,14 @@ export interface Experience {
   logo: string;
   companyUrl?: string;
 }
+
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  category: string;
+  icon: string;
+  image?: string;
+  link?: string;
+}

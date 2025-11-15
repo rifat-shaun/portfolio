@@ -1,4 +1,4 @@
-import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Experience } from '../types';
+import type { NavItem, SocialLink, Skill, Project, ContactInfo, PersonalInfo, Experience, Achievement } from '../types';
 
 export const personalInfo: PersonalInfo = {
   name: 'Iaan Mesquita',
@@ -14,6 +14,7 @@ export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Achievements', href: '#achievements' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -165,6 +166,66 @@ export const experiences: Experience[] = [
     technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Sass', 'Redux'],
     logo: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=200&fit=crop',
     companyUrl: 'https://example.com',
+  },
+];
+
+export const achievements: Achievement[] = [
+  {
+    id: '1',
+    title: 'Best Web Application Award',
+    description: 'Received recognition for developing the most innovative web application at Tech Summit 2023.',
+    date: '2023-11',
+    category: 'Awards',
+    icon: '🏆',
+    image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=600&h=400&fit=crop',
+    link: 'https://example.com/award',
+  },
+  {
+    id: '2',
+    title: 'Published Tech Article on Medium',
+    description: 'Wrote an in-depth article about React performance optimization that gained over 10K views.',
+    date: '2023-09',
+    category: 'Publications',
+    icon: '📝',
+    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop',
+    link: 'https://medium.com/@example',
+  },
+  {
+    id: '3',
+    title: 'Open Source Contributor',
+    description: 'Made significant contributions to popular open-source projects with over 500+ commits.',
+    date: '2023-08',
+    category: 'Open Source',
+    icon: '💻',
+    image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=600&h=400&fit=crop',
+    link: 'https://github.com/iaanmesquita',
+  },
+  {
+    id: '4',
+    title: 'AWS Certified Solutions Architect',
+    description: 'Successfully obtained AWS Solutions Architect Associate certification.',
+    date: '2023-06',
+    category: 'Certifications',
+    icon: '🎓',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
+  },
+  {
+    id: '5',
+    title: 'Hackathon Winner',
+    description: 'Led a team to victory at the National Coding Hackathon 2023 with an AI-powered solution.',
+    date: '2023-03',
+    category: 'Competition',
+    icon: '🥇',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop',
+  },
+  {
+    id: '6',
+    title: 'Tech Speaker at DevConf',
+    description: 'Delivered a keynote speech on modern web development practices to an audience of 500+ developers.',
+    date: '2022-12',
+    category: 'Speaking',
+    icon: '🎤',
+    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=400&fit=crop',
   },
 ];
 
